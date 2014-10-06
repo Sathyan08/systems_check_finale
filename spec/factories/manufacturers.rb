@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :manufacturer do
     name "MyString"
-    country "MyString"
+    country "Germany"
   end
 end
