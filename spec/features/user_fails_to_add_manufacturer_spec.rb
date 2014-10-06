@@ -6,13 +6,13 @@ does not fill in the form properly',
 %Q(
 
   As a Car dealer
-  I want to add to a list of manufacturers
-  so that that I can organize the cars that I am selling
-  by manufacturer
+  I want to know when I failed to properly create a
+  new manufacturer and what I did wrong
+  so that I can correct my mistakes
 
 ) do
 
-  scenario 'user adds comic book' do
+  scenario 'user improperly fills out the manufacturer form' do
 
     visit new_manufacturer_path
 

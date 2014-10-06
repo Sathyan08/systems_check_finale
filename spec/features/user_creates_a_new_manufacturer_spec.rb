@@ -9,7 +9,7 @@ feature 'user can add a new manufacturer', %Q(
 
 ) do
 
-  scenario 'user adds comic book' do
+  scenario 'user adds a new manufacturer' do
     manufacturer = FactoryGirl.build(:manufacturer)
 
     visit new_manufacturer_path
