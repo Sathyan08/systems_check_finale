@@ -9,7 +9,6 @@ feature 'user can add a new manufacturer', %Q(
 
 ) do
 
-
   scenario 'user adds comic book' do
     manufacturer = FactoryGirl.build(:manufacturer)
 

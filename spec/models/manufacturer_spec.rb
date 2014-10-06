@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Manufacturer, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Manufacturer do
+
+  it { should have_many(:cars) }
+
 end
