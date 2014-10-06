@@ -18,6 +18,7 @@ class CarsController < ApplicationController
       redirect_to @car, notice: 'Successfully Created!'
     else
       flash[:notice] = "Could Not Save"
+      render :new
     end
   end
 
