@@ -1,0 +1,8 @@
+<%= simple_form_for(car) do |f| %>
+  <%= f.input :name %>
+  <%= f.select :manufacturer, collection: @manufacturers %>
+  <%= f.input :year %>
+  <%= f.input :color %>
+  <%= f.input :mileage %>
+  <%= f.button :submit %>
+<% end %>
