@@ -15,7 +15,7 @@ class CarsController < ApplicationController
     @car = Car.new(car_params)
 
     if @car.save
-      redirect_to car_path, notice: 'Successfully Created!'
+      redirect_to @car, notice: 'Successfully Created!'
     else
       flash[:notice] = "Could Not Save"
     end
