@@ -16,7 +16,7 @@ class ManufacturersController < ApplicationController
     @manufacturer = Manufacturer.new(manufacturer_params)
 
     if @manufacturer.save
-      redirect_to @manufacturer, notice: 'Successfully Created!'
+      redirect_to({ action: "index" }, notice: 'Successfully Created!')
     else
       flash[:notice] = "Could Not Save"
       render :new
