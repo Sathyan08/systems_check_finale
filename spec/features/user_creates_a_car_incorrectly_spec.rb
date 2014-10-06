@@ -38,7 +38,7 @@ feature 'user is given error messages when inputing car incorrectly', %Q(
 end
 
 def expect_presence_error_for_car(attribute)
-  within ".input.car_#{attribute.to_s}" do
+  within ".input.car_#{attribute}" do
     expect(page).to have_content "can't be blank"
   end
 end

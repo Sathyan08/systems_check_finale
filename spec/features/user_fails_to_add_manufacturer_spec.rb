@@ -25,7 +25,7 @@ does not fill in the form properly',
 end
 
 def expect_presence_error_for(attribute)
-  within ".input.manufacturer_#{attribute.to_s}" do
+  within ".input.manufacturer_#{attribute}" do
     expect(page).to have_content "can't be blank"
   end
 end

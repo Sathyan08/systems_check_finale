@@ -34,4 +34,3 @@ class CarsController < ApplicationController
       )
   end
 end
-
