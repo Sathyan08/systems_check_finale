@@ -15,16 +15,17 @@ class ManufacturersController < ApplicationController
   def create
     @manufacturer = Manufacturer.new(manufacturer_params)
 
-    if @manufactuer.save
-      redirect_to @manufactuer, notice: 'Successfully Created'
+    if @manufacturer.save
+      redirect_to @manufacturer, notice: 'Successfully Created!'
     else
       flash[:notice] = "Could Not Save"
       render :new
     end
   end
 
-  def edit
+  private
 
-  end
-
+    def manufacturer_params
+      params.require(:manufacturer).permit(:name, :country)
+    end
 end

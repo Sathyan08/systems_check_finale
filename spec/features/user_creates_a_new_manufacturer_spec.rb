@@ -16,6 +16,7 @@ feature 'user can add a new manufacturer', %Q(
     visit new_manufacturer_path
     fill_in "Name", with: manufacturer.name
     select manufacturer.country, from: "Country"
+    click_button "Create Manufacturer"
 
     expect(page).to have_content("Successfully Created!")
   end

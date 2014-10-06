@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :manufacturer do
-    name "MyString"
+    name "Mercedes"
     country "Germany"
   end
 end
