@@ -1,0 +1,11 @@
+<h1><%= @manufacturer.name %></h1>
+
+<h3><%= @manufacturer.country %></h3>
+
+Cars:
+
+  <ul>
+    <% @cars.each do |car| %>
+      <%= link_to car.name, car_path(car) %>
+    <% end %>
+  </ul>
